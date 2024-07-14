@@ -27,7 +27,7 @@ const Navbar = () => {
             <MdOutlineSearch className='text-gray-800 text-xl' />
             <input
               type="text"
-              placeholder='search book...'
+              placeholder='search...'
               className='flex-1 outline-none bg-transparent placeholder:text-gray-500 text-gray-800'
               onChange={handleChange}
             />
