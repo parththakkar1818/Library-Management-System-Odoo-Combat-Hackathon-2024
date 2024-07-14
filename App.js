@@ -11,6 +11,8 @@ import About from "./components/About.jsx";
 import UserBooks from "./components/UserBooks.jsx";
 import Fine from "./components/Fine.jsx";
 import BookDetail from "./components/BookDetail.jsx";
+import Users from "./components/Users.jsx";
+import BorrowBooks from "./components/BorrowBooks.jsx";
 
 function Layout (){
   // const { user } = useSelector((state) => state.auth);
@@ -46,14 +48,17 @@ function App() {
           <Route path='/dashboard' element={<DashBoard/>}/>
           <Route path='/books' element={<Books/>}/>
           <Route path='user/books' element={<UserBooks/>}/>
-          <Route path='/phsp' element={<Books/>}/>
+          <Route path='/fiction' element={<Books/>}/>
           <Route path='/scifi' element={<Books/>}/>
           <Route path='/fantasy' element={<Books/>}/>
           <Route path='/mystery' element={<Books/>}/>
           <Route path='/romance' element={<Books/>}/>
           <Route path='/horror' element={<Books/>}/>
           <Route path='/thriller' element={<Books/>}/>
+          <Route path='/science' element={<Books/>}/>
           <Route path='/book/:status' element={<BookDetail/>}/>
+          <Route path='users/:status' element={<Users/>}/>
+          <Route path='borrowed/:status' element={<BorrowBooks/>}/>
 
           <Route path='/fine/:status' element={<Fine/>}/>
 
